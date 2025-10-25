@@ -1,5 +1,6 @@
 // components/About.jsx
 import React from 'react';
+import profile from "../assets/Profile.png"
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
           {/* Profile Image */}
           <div className="flex-shrink-0">
             <img 
-              src="/assets/Profile.png" 
+              src={profile} 
               alt="Sumit Das"
               className="w-64 h-64 rounded-full object-cover border-4 border-blue-500 shadow-lg"
               onError={(e) => {
