@@ -5,80 +5,78 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projects = [
-    {
-      id: 1,
-      title: "Foodie – Online Food Ordering Platform 🍔",
-      description: "A full-stack food ordering platform where users can browse food items, add them to cart, and place orders. Admins can manage foods and track orders.",
-      tech: ["MERN Stack", "MongoDB", "Express", "React", "Node.js", "JWT", "Multer", "TailwindCSS"],
-      features: [
-        "User authentication and role-based admin panel",
-        "Add to cart, order tracking, and CRUD food management",
-        "RESTful API with secure JWT authorization"
-      ],
-      links: {
-        github: "https://github.com/souravsumit07/Foodie",
-        liveApi: "https://foodie-l25y.onrender.com/api/food/getFood",
-        frontend: "https://foodie-frontend.vercel.app"
-      }
+  {
+    id: 1,
+    title: "Foodie – Online Food Ordering Platform 🍔",
+    description:
+      "A full-stack food ordering platform where users can browse food items, add them to cart, and place orders. Admins can manage foods and track orders.",
+    tech: [
+      "MERN Stack",
+      "MongoDB",
+      "Express",
+      "React",
+      "Node.js",
+      "JWT",
+      "Multer",
+      "TailwindCSS",
+    ],
+    features: [
+      "User authentication and role-based admin panel",
+      "Add to cart, order tracking, and CRUD food management",
+      "RESTful API with secure JWT authorization",
+    ],
+    links: {
+      github: "https://github.com/souravsumit07/Foodie",
+      liveApi: "https://foodie-l25y.onrender.com/api/food/getFood",
+      frontend: "https://foodie-frontend.vercel.app",
     },
-    {
-      id: 2,
-      title: "Hospital Management System (MERN)",
-      description: "Backend system with role-based access for doctors, patients, and admins.",
-      tech: ["Node.js", "Express", "MongoDB", "JWT", "Mongoose"],
-      features: [
-        "Role-based access control",
-        "Patient and doctor management",
-        "Appointment scheduling system"
-      ],
-      links: {
-        github: "https://github.com/yourusername/hospital-backend",
-        liveApi: "https://hospital-backend.onrender.com"
-      }
+  },
+
+  
+  {
+    id: 2,
+    title: "BookShow – Online Movie Ticket Booking 🎬",
+    description:
+      "A movie ticket booking web app where users can browse movies, check showtimes, and book seats. Admins can manage movies, shows, and bookings.",
+    tech: [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Docker",
+      "JWT",
+      "Prometheus",
+      "Grafana",
+      "React (future integration)",
+    ],
+    features: [
+      "User authentication and authorization",
+      "Movie and showtime management for admins",
+      "Seat selection and booking system",
+      "Dockerized microservice deployment",
+      "Real-time performance monitoring with Prometheus & Grafana",
+    ],
+    links: {
+      github: "https://github.com/souravsumit07/BookShow",
+      liveApi: "https://bookshow-api.onrender.com/api/movies", // update if you have a different live API URL
     },
-    {
-      id: 3,
-      title: "E-commerce API",
-      description: "Secure REST API with product management, user auth, and cart system.",
-      tech: ["Node.js", "Express", "MongoDB", "JWT", "bcrypt"],
-      features: [
-        "Product catalog management",
-        "User authentication and authorization",
-        "Shopping cart functionality"
-      ],
-      links: {
-        github: "https://github.com/yourusername/ecommerce-backend"
-      }
+  },
+  {
+    id: 3,
+    title: "E-commerce API",
+    description:
+      "Secure REST API with product management, user auth, and cart system.",
+    tech: ["Node.js", "Express", "MongoDB", "JWT", "bcrypt"],
+    features: [
+      "Product catalog management",
+      "User authentication and authorization",
+      "Shopping cart functionality",
+    ],
+    links: {
     },
-    {
-      id: 4,
-      title: "Chat App Backend",
-      description: "Real-time communication server using Socket.io.",
-      tech: ["Node.js", "Express", "Socket.io", "JWT"],
-      features: [
-        "Real-time messaging",
-        "User presence tracking",
-        "Room-based conversations"
-      ],
-      links: {
-        github: "https://github.com/yourusername/chat-backend"
-      }
-    },
-    {
-      id: 5,
-      title: "Blog API",
-      description: "Token-based authentication and CRUD blog post management.",
-      tech: ["Node.js", "Express", "MongoDB"],
-      features: [
-        "Token-based authentication",
-        "CRUD operations for blog posts",
-        "Comment system"
-      ],
-      links: {
-        github: "https://github.com/yourusername/blog-backend"
-      }
-    }
-  ];
+    
+  },
+];
+
 
   const openJsonViewer = (project) => {
     setSelectedProject(project);
